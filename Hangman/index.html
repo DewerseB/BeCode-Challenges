@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <meta name="description" content="Hang it!">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <!--<img class="background" src="./assets/img/duckhunt.jpg">-->
+            <div class="buttons" id="btns">
+
+            </div>
+            <canvas class="canvas-hangman" id="canvasHangman" width="900" height="507">
+                Votre navigateur ne supporte pas Canvas :(
+            </canvas>
+            <canvas class="canvas-ui" id="canvasUI" width="900" height="507">
+                Votre navigateur ne supporte pas Canvas :(
+            </canvas>
+        </section>
+        <div class="menu">
+            <form>
+                <select name="Words Categories" id="categoriesList" size="1rem">
+                </select>
+            </form>
+            <input type="button" value="Start" id="start">
+        </div>
+    </main>
+    <script src="./assets/js/wordslib.js"></script>
+    <script src="./assets/js/UI.js"></script>
+    <script src="./assets/js/game.js"></script>
+</body>
+
+</html>
