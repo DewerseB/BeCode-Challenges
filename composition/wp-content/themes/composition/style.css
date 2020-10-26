@@ -1,0 +1,89 @@
+/*
+Theme Name: Composition
+Description: Something
+Author: Bastien Dewerse
+Author URI: https://github.com/DewerseB
+Version: 1.0
+*/
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url('./assets/fonts/proxima-nova/ProximaNova-Regular.otf');
+}
+@font-face {
+	font-family: "Proxima Nova";
+	font-style: italic;
+	src: url('./assets/fonts/proxima-nova/ProximaNova-RegularItalic.otf');
+}
+@font-face {
+	font-family: "Proxima Nova";
+	font-weight: bold;
+	src: url('./assets/fonts/proxima-nova/ProximaNova-Bold.otf');
+}
+@font-face {
+	font-family: "Proxima Nova";
+	font-style: italic;
+	font-weight: bold;
+	src: url('./assets/fonts/proxima-nova/ProximaNova-BoldIt.otf');
+}
+
+body {
+    margin: 0;
+    font-family: "Proxima Nova";
+}
+
+#site-content {
+    display: flex;
+}
+
+
+/* Main menu */
+
+.menu {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-item-home a img {
+    height: 20px;
+    width: auto;
+    filter: brightness(100) saturate(100%);
+}
+
+div.menu-principal-container {
+    background-color: #000000;
+    padding: 1rem 0;
+}
+
+div.menu-principal-container ul {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align: right;
+}
+div.menu-principal-container li {
+    padding-right: 2rem;
+    display: inline;
+} 
+div.menu-principal-container a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.current_page_item a {
+    border-bottom: 0.1rem solid white;
+}
+
+
+/* Front page */
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.front-image {
+    width: 100%;
+    height: auto;
+}

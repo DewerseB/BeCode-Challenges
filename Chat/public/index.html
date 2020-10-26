@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Becode Chat</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <header id="login">
+      <h1>Bienvenue</h1>
+      <p>Le chat de Becode Réalisé par : Bastien , Nathan , Albert et Robby</p>
+    </header>
+    <div class="userinchat">
+
+    </div>
+    
+    <main id="messages" >
+      <form action="" id="loginform" class="userform">
+        <p>Se connecter</p>
+        <input type="text" name="login" id="usernamelogin" placeholder="Votre pseudo" autocomplete="off" required>
+        <input type="password" name="pass" id="passwordlogin" placeholder="Votre pass" autocomplete="off" required>
+        <input type="submit" id="senduser" value="Login">
+        <p id="errorlogin" style="color:red;"></p>
+      </form>
+      <form action="" id="registerform" class="userform">
+        <p>S'enregistrer</p>
+        <input type="text" name="login" id="usernameregister" placeholder="Votre pseudo" autocomplete="off" required>
+        <input type="password" name="pass" id="passwordregister" placeholder="Votre pass" autocomplete="off" required>
+        <input type="submit" id="registeruser" value="Register">
+        <p id="errorregister" style="color:red;"></p>
+      </form>
+      <div class="message" id="msgtpl" style="display:none;">
+        <div class="info">
+          <p class="messagebody"><strong>{{user}}</strong></p>:<br><p class="messagecontent">{{message}}</p>
+          <p class="messagedate">{{date}}</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <form action="" id="tchatinput">
+        <input id="message" autocomplete="off" placeholder="Votre message">
+        <input id="m" type="submit" value="Envoyer">
+      </form>
+      <form action="" id="discbtn">
+        <input type="submit" value="Disconnect"  id="btndisc"style="display:none;">
+      </form>
+      <div class="bg"></div>
+    </footer>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/mustache.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/user.js"></script>
+
+  </body>
+</html>
